@@ -24,9 +24,8 @@ def printer (attendees)
   badges = batch_badge_creator(attendees)
   room_assignments = assign_rooms(attendees)
   badges_and_room_assignments = badges.concat(room_assignments) 
-  i = 0 
-  while i < badges_and_room_assignments.length 
-    puts badges_and_room_assignments[i]
+  badges_and_room_assignments.each do |assignments|
+    puts assignments
     i += 1
   end 
 end 
