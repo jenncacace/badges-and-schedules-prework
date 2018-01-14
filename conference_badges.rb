@@ -26,6 +26,5 @@ def printer (attendees)
   badges_and_room_assignments = badges.concat(room_assignments) 
   badges_and_room_assignments.each do |assignments|
     puts assignments
-    i += 1
   end 
 end 
